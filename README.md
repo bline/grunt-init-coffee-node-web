@@ -4,13 +4,14 @@
 [grunt-init]: http://gruntjs.com/project-scaffolding
 [Mocha]: http://mochajs.org/
 [Webpack]: http://webpack.github.io/
+[Karma]: http://karma-runner.github.io/
 
 # grunt-init-coffee-node-web
 
 > Create a Node.js/Web module with [grunt-init][].
 
 * [CoffeeScript][] compilation (including tests!).
-* [Karma][] test suite with [Mocha][http://mochajs.org/] configured for both browser and Node.js testing!
+* [Karma][] test suite with [Mocha][] configured for both browser and Node.js testing!
 * [Webpack][] packages dev and minified versions for including via `<script>` tags and provides packing functionality for [Karma][].
 
 ## Directory structory
