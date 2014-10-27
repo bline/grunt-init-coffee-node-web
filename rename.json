@@ -1,0 +1,4 @@
+{
+  "src/lib/name.coffee": "src/lib/{%= name %}.coffee",
+  "src/test/spec/name.coffee": "src/test/spec/{%= name %}.coffee"
+}
