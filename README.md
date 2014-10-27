@@ -1,13 +1,28 @@
 
+[CoffeeScript]: http://coffeescript.org
+[CoffeeLint]: http://www.coffeelint.org
+[grunt-init]: http://gruntjs.com/project-scaffolding
+[Mocha]: http://mochajs.org/
+[Webpack]: http://webpack.github.io/
+
 # grunt-init-coffee-node-web
 
 > Create a Node.js/Web module with [grunt-init][].
 
-* CoffeeScript compilation (including tests!).
-* Karma test suite with Mocha for both browser and Node.js testing.
-* Webpack packages dev and minified versions for including via `<script>` tags.
+* [CoffeeScript][] compilation (including tests!).
+* [Karma][] test suite with [Mocha][http://mochajs.org/] configured for both browser and Node.js testing!
+* [Webpack][] packages dev and minified versions for including via `<script>` tags and provides packing functionality for [Karma][].
 
-[grunt-init]: http://gruntjs.com/project-scaffolding
+## Directory structory
+
+
+* grunt clean     - Remove all built files.
+* grunt build     - Build JS files from the [CoffeeScript][]
+* grunt build:all - Also build dist/`$name`.js and dist/`$name`.min.js for browser inclusing.
+* grunt test      - Runs [CoffeeLint][] and Mocha tests in terminal.
+* grunt test:all  - Also runs [Krama][] tests.
+* 
+
 
 ## Installation
 If you haven't already done so, install [grunt-init][].
@@ -30,3 +45,11 @@ grunt-init coffee-node-web
 
 _Note that this template will generate files in the current directory, so be sure to change to a new directory first if you don't want to overwrite existing files._
 
+## See Also
+
+* [grunt-init][]
+* [Karma][]
+* [Mocha][]
+* [Webpack][]
+* [CoffeeScript][]
+* [CoffeeLint][]
