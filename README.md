@@ -16,14 +16,41 @@
 
 ## Directory structory
 
+```
+  ├── coffeelint.json                    - config CoffeeLint
+  ├── coverage.html                      - output from test:coverage
+  ├── dist                               - created by build:all
+  │   ├── name.js
+  │   └── name.min.js
+  ├── Gruntfile.coffee                   - grunt entry point
+  ├── karma.conf.js                      - config for Karma
+  ├── package.json                       - generated with dev deps, name, etc
+  ├── README.md                          - sample README
+  ├── src
+  │   ├── lib
+  │   │   └── name.coffee                - sample library
+  │   └── test
+  │       ├── helpers
+  │       │   ├── common-header.coffee   - included in all tests
+  │       │   ├── header.coffee          - included in Mocha unit tests
+  │       │   └── header-cov.coffee      - included in Mocha coverage tests
+  │       └── spec
+  │           └── name.coffee            - sample test spec for Mocha
+  ├── webpack.config.coffee              - for creating dist/name.js
+  └── webpack.dist.config.coffee         - for creating dist/name.min.js
 
-* grunt clean     - Remove all built files.
-* grunt build     - Build JS files from the [CoffeeScript][]
-* grunt build:all - Also build dist/`$name`.js and dist/`$name`.min.js for browser inclusing.
-* grunt test      - Runs [CoffeeLint][] and Mocha tests in terminal.
-* grunt test:all  - Also runs [Krama][] tests.
-* 
+```
 
+## Basic commands
+
+* grunt build          - Build JS files from the [CoffeeScript][]
+* grunt build:all      - Also build dist/`$name`.js and dist/`$name`.min.js for browser inclusing.
+* grunt test           - Runs [CoffeeLint][] and Mocha tests in terminal.
+* grunt test:all       - Also runs [Krama][] tests.
+* grunt test:coverage  - creates coverage.html and launches veiwer (Web Browser)
+* grunt                - same as `grunt test`
+
+See also `grunt -h`
 
 ## Installation
 If you haven't already done so, install [grunt-init][].
