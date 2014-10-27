@@ -143,7 +143,6 @@ module.exports = (grunt) ->
   ]
   # Default task.
   grunt.registerTask "default", [
-    "coffeelint"
     "test"
   ]
   return
