@@ -44,7 +44,7 @@
 ## Basic commands
 
 * grunt build          - Build JS files from the [CoffeeScript][]
-* grunt build:all      - Also build dist/`$name`.js and dist/`$name`.min.js for browser inclusing.
+* grunt build:all      - Also build `dist/$name.js` and `dist/$name.min.js` for browser including.
 * grunt test           - Runs [CoffeeLint][] and Mocha tests in terminal.
 * grunt test:all       - Also runs [Krama][] tests.
 * grunt test:coverage  - creates coverage.html and launches veiwer (Web Browser)
